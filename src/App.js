@@ -45,7 +45,7 @@ function App() {
           }}
           />
         </div>
-        <button className='review' disabled={load} onClick={() => reviewCode()}>Review</button>
+        <button className='review' disabled={load} onClick={() => reviewCode()}>{load === true ? 'Loading...' : 'Review'}</button>
       </div>
       <div className='right'>
         <Markdown
